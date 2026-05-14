@@ -30,4 +30,12 @@ public class HomePage {
 
     // US04: Elemento das regras do jogo (How to Play)
     public SelenideElement btnHowToPlay = $(By.xpath("//*[contains(text(),'How to Play') or contains(text(),'Rules')]"));
+
+    // US05
+    public SelenideElement playWithFriend =
+            $(By.xpath("//*[contains(text(),'Play with a friend')]"));
+    // US06
+    public SelenideElement playVsBot =
+            $(By.xpath("//*[contains(text(),'Play vs robot')]"));
+
 }
