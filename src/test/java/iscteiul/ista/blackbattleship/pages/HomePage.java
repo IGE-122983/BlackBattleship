@@ -35,6 +35,9 @@ public class HomePage {
 
     // Asserção: Elemento exclusivo da página de Leaderboard/Torneio que mostra Vitórias/Derrotas/Empates
     public SelenideElement cabecalhoWLD = $(withText("W/L/D"));
-    // US04: Elemento das regras do jogo (How to Play)
-    public SelenideElement btnHowToPlay = $(By.xpath("//*[contains(text(),'How to Play') or contains(text(),'Rules')]"));
+    // US04: Botão "Game guides" no menu lateral
+    public SelenideElement btnGameGuides = $(withText("Game guides"));
+
+    // Asserção: Texto de boas-vindas exclusivo da página de guias
+    public SelenideElement textoBoasVindasGuias = $(withText("Welcome to our game guide hub!"));
 }
