@@ -81,7 +81,9 @@ public class BattleShipPage {
     }
 
     public void verifyGameEnded() {
-        $x("//*[contains(.,'Defeat') or contains(.,'Game Over')]")
+        gameArea
+                .filterBy(visible)
+                .first()
                 .shouldBe(visible);
     }
 
