@@ -2,6 +2,10 @@ package iscteiul.ista.blackbattleship.pages;
 
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
+// US03: Link "See all" para abrir a Leaderboard completa
+import static com.codeborne.selenide.Selectors.withText; // Garante que este import existe
+
+import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.$$;
 import static com.codeborne.selenide.Condition.text;
 
@@ -22,20 +26,18 @@ public class HomePage {
     public SelenideElement inputNickname = $(By.xpath("//input[@type='text' or contains(@placeholder, 'nickname')]"));
     public SelenideElement btnContinue = $(By.xpath("//button[contains(text(),'Continue')]"));
 
-    // US02: Elementos de Login/Sign Up
-    public SelenideElement btnLoginSignUp = $(By.xpath("//*[contains(text(),'Login') or contains(text(),'Sign Up')]"));
+    // O botão de Login/Sign Up
+    public SelenideElement btnLoginSignUp = $$("button").findBy(text("Login"));
 
-    // US03: Elemento da Leaderboard
-    public SelenideElement btnLeaderboard = $(By.xpath("//*[contains(text(),'Leaderboard')]"));
+    // Novo elemento para a Asserção: procura especificamente por um campo de input de email ou texto
+    public SelenideElement inputEmail = $(By.xpath("//input[@type='email' or contains(@placeholder, 'Email') or contains(@placeholder, 'Username')]"));
+    public SelenideElement btnSeeAll = $(withText("See all"));
 
-    // US04: Elemento das regras do jogo (How to Play)
-    public SelenideElement btnHowToPlay = $(By.xpath("//*[contains(text(),'How to Play') or contains(text(),'Rules')]"));
+    // Asserção: Elemento exclusivo da página de Leaderboard/Torneio que mostra Vitórias/Derrotas/Empates
+    public SelenideElement cabecalhoWLD = $(withText("W/L/D"));
+    // US04: Botão "Game guides" no menu lateral
+    public SelenideElement btnGameGuides = $(withText("Game guides"));
 
-    // US05
-    public SelenideElement playWithFriend =
-            $(By.xpath("//*[contains(text(),'Play with a friend')]"));
-    // US06
-    public SelenideElement playVsBot =
-            $(By.xpath("//*[contains(text(),'Play vs robot')]"));
-
+    // Asserção: Texto de boas-vindas exclusivo da página de guias
+    public SelenideElement textoBoasVindasGuias = $(withText("Welcome to our game guide hub!"));
 }
