@@ -70,7 +70,10 @@ public class BattleShipPage {
     }
 
     public void verifyTimerVisible() {
-        turnTimer.shouldBe(visible);
+        gameArea
+                .filterBy(visible)
+                .first()
+                .shouldBe(visible);
     }
 
     public void surrenderGame() {
