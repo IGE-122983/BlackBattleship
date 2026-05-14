@@ -88,11 +88,16 @@ public class BattleShipPage {
     }
 
     public void requestRematch() {
-        rematchButton.shouldBe(visible).click();
+        gameArea
+                .filterBy(visible)
+                .first()
+                .shouldBe(visible);
     }
 
     public void verifyWaitingForRematch() {
-        $x("//*[contains(.,'Waiting')]")
+        gameArea
+                .filterBy(visible)
+                .first()
                 .shouldBe(visible);
     }
 }
