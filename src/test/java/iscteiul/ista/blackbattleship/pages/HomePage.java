@@ -2,6 +2,8 @@ package iscteiul.ista.blackbattleship.pages;
 
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
+// US03: Link "See all" para abrir a Leaderboard completa
+import static com.codeborne.selenide.Selectors.withText; // Garante que este import existe
 
 import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.$$;
@@ -29,9 +31,10 @@ public class HomePage {
 
     // Novo elemento para a Asserção: procura especificamente por um campo de input de email ou texto
     public SelenideElement inputEmail = $(By.xpath("//input[@type='email' or contains(@placeholder, 'Email') or contains(@placeholder, 'Username')]"));
-    // US03: Elemento da Leaderboard
-    public SelenideElement btnLeaderboard = $(By.xpath("//*[contains(text(),'Leaderboard')]"));
+    public SelenideElement btnSeeAll = $(withText("See all"));
 
+    // Asserção: Elemento exclusivo da página de Leaderboard/Torneio que mostra Vitórias/Derrotas/Empates
+    public SelenideElement cabecalhoWLD = $(withText("W/L/D"));
     // US04: Elemento das regras do jogo (How to Play)
     public SelenideElement btnHowToPlay = $(By.xpath("//*[contains(text(),'How to Play') or contains(text(),'Rules')]"));
 }
