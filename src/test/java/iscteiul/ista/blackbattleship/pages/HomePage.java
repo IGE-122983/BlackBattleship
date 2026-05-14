@@ -2,6 +2,8 @@ package iscteiul.ista.blackbattleship.pages;
 
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
+
+import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.$$;
 import static com.codeborne.selenide.Condition.text;
 
@@ -22,9 +24,11 @@ public class HomePage {
     public SelenideElement inputNickname = $(By.xpath("//input[@type='text' or contains(@placeholder, 'nickname')]"));
     public SelenideElement btnContinue = $(By.xpath("//button[contains(text(),'Continue')]"));
 
-    // US02: Elementos de Login/Sign Up
-    public SelenideElement btnLoginSignUp = $(By.xpath("//*[contains(text(),'Login') or contains(text(),'Sign Up')]"));
+    // O botão de Login/Sign Up
+    public SelenideElement btnLoginSignUp = $$("button").findBy(text("Login"));
 
+    // Novo elemento para a Asserção: procura especificamente por um campo de input de email ou texto
+    public SelenideElement inputEmail = $(By.xpath("//input[@type='email' or contains(@placeholder, 'Email') or contains(@placeholder, 'Username')]"));
     // US03: Elemento da Leaderboard
     public SelenideElement btnLeaderboard = $(By.xpath("//*[contains(text(),'Leaderboard')]"));
 
