@@ -1,0 +1,1245 @@
+{
+  "id": "cf923a00-63b5-4b06-aa12-eb3c14b8a13c",
+  "version": "2.0",
+  "name": "TestSuite_94255",
+  "url": "https://papergames.io/en/battleship",
+  "tests": [{
+    "id": "f594fadc-c24a-4af2-b770-75983f6bc99e",
+    "name": "US14_CheckTimer",
+    "commands": [{
+      "id": "957acbb5-60b8-4fc2-aae2-918c1aa135de",
+      "comment": "",
+      "command": "open",
+      "target": "https://papergames.io/en/battleship",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "595f8700-c8f2-4ea5-899b-6785567fce94",
+      "comment": "Inicializarão da dimensão da janela ",
+      "command": "setWindowSize",
+      "target": "1440x818",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "909568d9-2b22-4359-b867-8cd59b66d5d2",
+      "comment": "Iniciar jogo contra bot",
+      "command": "click",
+      "target": "css=.w-100:nth-child(2) > .btn .flex-grow-1",
+      "targets": [
+        ["css=.w-100:nth-child(2) > .btn .flex-grow-1", "css:finder"],
+        ["xpath=//app-juicy-button[2]/button/span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bdabd167-c29c-4ec8-afe8-0aa8335f12cf",
+      "comment": "Verificar timer",
+      "command": "verifyText",
+      "target": "css=.text-white > .ng-star-inserted > span:nth-child(3)",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "f494fc3b-51a2-4f9e-af91-51cd02431963",
+    "name": "US15_SurrenderGame",
+    "commands": [{
+      "id": "20280296-0475-459b-ab13-e913b7bbcb3d",
+      "comment": "",
+      "command": "open",
+      "target": "https://papergames.io/en/battleship",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "64e4ca89-e264-4257-b7cf-404e42f36cec",
+      "comment": "Inicializarão da dimensão da janela ",
+      "command": "setWindowSize",
+      "target": "1440x818",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "22243eb5-6402-4f3c-81cf-f0208c09e5f7",
+      "comment": "Iniciar jogo contra bot",
+      "command": "click",
+      "target": "css=.w-100:nth-child(2) > .btn .flex-grow-1",
+      "targets": [
+        ["css=.w-100:nth-child(2) > .btn .flex-grow-1", "css:finder"],
+        ["xpath=//app-juicy-button[2]/button/span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a31b44a-8eb0-4255-a461-85d466709f9c",
+      "comment": "Disparar contra adversário",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "9da75b40-5a46-4a69-bb29-0bfe1b79f954",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ng-star-inserted > .mat-mdc-tooltip-trigger > .mat-mdc-button-touch-target",
+      "targets": [
+        ["css=.ng-star-inserted > .mat-mdc-tooltip-trigger > .mat-mdc-button-touch-target", "css:finder"],
+        ["xpath=//span/app-settings-menu/button/span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5098804-38e4-4091-8ca1-087648fd07ac",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.ng-star-inserted > .mat-mdc-tooltip-trigger > .mat-mdc-button-touch-target",
+      "targets": [
+        ["css=.ng-star-inserted > .mat-mdc-tooltip-trigger > .mat-mdc-button-touch-target", "css:finder"],
+        ["xpath=//span/app-settings-menu/button/span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "69338e80-b2ff-40fa-8d99-3ca77f861c06",
+      "comment": "Clicar em Resign",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//span/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Resign')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e13eabce-8f2c-4da3-bb45-ead5e73da8b8",
+      "comment": "Confirmar Resign(Desistir)",
+      "command": "click",
+      "target": "css=.btn-danger",
+      "targets": [
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-serverApp0']/div/div/app-confirm-leave-dialog/app-dialog-layout/div/footer/button[2]", "xpath:idRelative"],
+        ["xpath=//footer/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "648df34f-127b-434c-9aa8-1d8bd59dd9bb",
+    "name": "US16_RequestRematch",
+    "commands": [{
+      "id": "510e4c89-8816-48a7-9c7c-c5b595507951",
+      "comment": "",
+      "command": "open",
+      "target": "https://papergames.io/en/r/bKh_TDZMd",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bcb82b62-5743-4d44-bd88-411e03188846",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x818",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba5dccc3-91ca-489f-af79-b95d426d8a9b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "786aef6e-92ce-4375-9d91-9b28a4ac39a1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "4743b0e0-fb52-4ad4-b900-7f2c7ec6c9b0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "c49e1118-5c73-4f43-a1e4-87f16079056b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "eab0533a-f6c6-44af-ac40-db5460688bf8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(2) > .null:nth-child(1) > .intersection",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(2) > .null:nth-child(1) > .intersection", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "1687bb8f-a26a-477d-8f0f-dd8e4422507c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.target",
+      "targets": [
+        ["css=.target", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "8414d03d-5d47-4155-b04a-ea046b845080",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9a3e0fa-e3e2-46a8-b6a8-f275827b7334",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-question",
+      "targets": [
+        ["css=.fa-question", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "25b0bece-1208-4fe1-8ae9-0219688c2fb7",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.weapon-button:nth-child(2) > img",
+      "targets": [
+        ["css=.weapon-button:nth-child(2) > img", "css:finder"],
+        ["xpath=//img[@alt='missile']", "xpath:img"],
+        ["xpath=//div[@id='player_weapons']/button[2]/img", "xpath:idRelative"],
+        ["xpath=//button[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "81dbdf23-abd8-4519-810a-f7573a121b00",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.weapon-button:nth-child(2) > img",
+      "targets": [
+        ["css=.weapon-button:nth-child(2) > img", "css:finder"],
+        ["xpath=//img[@alt='missile']", "xpath:img"],
+        ["xpath=//div[@id='player_weapons']/button[2]/img", "xpath:idRelative"],
+        ["xpath=//button[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "64f64e4e-3ecf-474b-8e1c-40d064f9a2c3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.weapon-button:nth-child(3)",
+      "targets": [
+        ["css=.weapon-button:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='player_weapons']/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'1')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8271ffed-123f-4b58-b945-e4f719018ccf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "2498502a-bee7-4c8b-aa65-a458781c7413",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "97912034-803a-4aa3-8083-5a8bac5f9163",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cell-2-3 .circle",
+      "targets": [
+        ["css=.cell-2-3 .circle", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef6000a7-651e-450a-9f89-edb4f6548400",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "14fac09a-32ca-4a73-af94-f9e1ab48ce80",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cell-1-2 .circle",
+      "targets": [
+        ["css=.cell-1-2 .circle", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "734fd1d9-984a-4142-a6b7-3e087644e20d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cell-1-1 > .intersection",
+      "targets": [
+        ["css=.cell-1-1 > .intersection", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "472c598a-7932-4551-ac9a-ec4d611f2ded",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cell-1-0 > .no-hit",
+      "targets": [
+        ["css=.cell-1-0 > .no-hit", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "fba791b4-07bb-40b1-8a33-a9b01faaa737",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cell-1-0 > .no-hit",
+      "targets": [
+        ["css=.cell-1-0 > .no-hit", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "beddb220-0036-4b8b-b0c1-52ee78b6859d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "b08923c1-0afa-4241-840f-b7e90516fd92",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(2) > .null:nth-child(5) > .intersection",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(2) > .null:nth-child(5) > .intersection", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "1fa92fc0-04e3-42ff-83d0-38696031461f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cell-1-4 .circle",
+      "targets": [
+        ["css=.cell-1-4 .circle", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f783fb9-3d22-470c-8ab1-46158a85d0ee",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cell-1-0 > .no-hit",
+      "targets": [
+        ["css=.cell-1-0 > .no-hit", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d17879b-529a-4dac-81a9-30839b015976",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover > .circle",
+      "targets": [
+        ["css=.hover > .circle", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "587a6e06-12dc-4fd6-af30-44becb998c67",
+      "comment": "",
+      "command": "click",
+      "target": "css=.weapon-button:nth-child(2) > img",
+      "targets": [
+        ["css=.weapon-button:nth-child(2) > img", "css:finder"],
+        ["xpath=//img[@alt='missile']", "xpath:img"],
+        ["xpath=//div[@id='player_weapons']/button[2]/img", "xpath:idRelative"],
+        ["xpath=//button[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d3de080-62f1-4477-a57e-300a5a0f56bb",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.is-selected",
+      "targets": [
+        ["css=.is-selected", "css:finder"],
+        ["xpath=//div[@id='player_weapons']/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'2')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6152603-e843-4cdb-b74f-7a9dd1ed09ca",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cell-7-5 > .no-hit",
+      "targets": [
+        ["css=.cell-7-5 > .no-hit", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ef0f1c2-468c-4951-8397-ded23c968146",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cell-7-4 .circle",
+      "targets": [
+        ["css=.cell-7-4 .circle", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "30872623-7fa3-4a66-97ff-4b8b910a6738",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "20ac7af0-7fa7-4674-9d54-8b1723f8588e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(9) > .null:nth-child(5) > .intersection",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(9) > .null:nth-child(5) > .intersection", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "c25363a3-4c1d-4a87-b6d2-193ca96fc362",
+      "comment": "",
+      "command": "click",
+      "target": "css=.is-selected > img",
+      "targets": [
+        ["css=.is-selected > img", "css:finder"],
+        ["xpath=//img[@alt='default']", "xpath:img"],
+        ["xpath=//div[@id='player_weapons']/button/img", "xpath:idRelative"],
+        ["xpath=//button/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc08f346-4ce9-42f2-8a18-3d4b990f9068",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.is-selected",
+      "targets": [
+        ["css=.is-selected", "css:finder"],
+        ["xpath=//div[@id='player_weapons']/button", "xpath:idRelative"],
+        ["xpath=//app-weapons/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ccee4d0f-b625-428e-b1ae-d8ef58a526ef",
+      "comment": "",
+      "command": "click",
+      "target": "css=.target",
+      "targets": [
+        ["css=.target", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "0696e59c-2df6-4b77-b441-8d26eb113da8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4579e8f-ce1f-4a47-9cab-2c05b4660766",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(2) > .null:nth-child(5) > .intersection",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(2) > .null:nth-child(5) > .intersection", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "92253f50-35a4-462e-9fa9-ed5556bc7611",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cell-1-4 .circle",
+      "targets": [
+        ["css=.cell-1-4 .circle", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4981e18-9cd3-4f0b-859a-01a75bfa3090",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "3085f715-d672-4ac3-9ea0-fb599fefb51d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.target",
+      "targets": [
+        ["css=.target", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "f54b77c4-347b-4e2e-ba69-01ee278b32be",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover > .circle",
+      "targets": [
+        ["css=.hover > .circle", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "671263e8-494a-4219-b636-da9c91570b10",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cell-8-3 path",
+      "targets": [
+        ["css=.cell-8-3 path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "94da1388-cf76-4a9e-8643-128605137caa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cell-8-3 path",
+      "targets": [
+        ["css=.cell-8-3 path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3151e60-3f5b-4418-94d6-cc75b686b042",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cell-6-9 .svg-inline--fa",
+      "targets": [
+        ["css=.cell-6-9 .svg-inline--fa", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9079370-4ac2-4ea5-b113-e802f14ab04e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cell-6-9 .svg-inline--fa",
+      "targets": [
+        ["css=.cell-6-9 .svg-inline--fa", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e90730c-7357-4bf6-8c7d-3431520be4cc",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.is-selected > img",
+      "targets": [
+        ["css=.is-selected > img", "css:finder"],
+        ["xpath=//img[@alt='default']", "xpath:img"],
+        ["xpath=//div[@id='player_weapons']/button/img", "xpath:idRelative"],
+        ["xpath=//button/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb1de2c0-e88c-4a33-b88b-ff967f9f6836",
+      "comment": "",
+      "command": "click",
+      "target": "css=.weapon-button:nth-child(2) > img",
+      "targets": [
+        ["css=.weapon-button:nth-child(2) > img", "css:finder"],
+        ["xpath=(//img[@alt='missile'])[3]", "xpath:img"],
+        ["xpath=//div[@id='player_weapons']/button[2]/img", "xpath:idRelative"],
+        ["xpath=//button[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c004a321-ef6d-42b0-a44c-f654f6f15eaf",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.is-selected",
+      "targets": [
+        ["css=.is-selected", "css:finder"],
+        ["xpath=//div[@id='player_weapons']/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'3')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a882d5e-885d-416d-8987-98323ce201e5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.target",
+      "targets": [
+        ["css=.target", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a02e310-135f-448d-b884-65cb4d2ae283",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.weapon-button:nth-child(2) > img",
+      "targets": [
+        ["css=.weapon-button:nth-child(2) > img", "css:finder"],
+        ["xpath=(//img[@alt='missile'])[3]", "xpath:img"],
+        ["xpath=//div[@id='player_weapons']/button[2]/img", "xpath:idRelative"],
+        ["xpath=//button[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "03e36e22-4f74-43b9-845d-bac7522a89ff",
+      "comment": "",
+      "command": "click",
+      "target": "css=.weapon-button:nth-child(2) > img",
+      "targets": [
+        ["css=.weapon-button:nth-child(2) > img", "css:finder"],
+        ["xpath=(//img[@alt='missile'])[3]", "xpath:img"],
+        ["xpath=//div[@id='player_weapons']/button[2]/img", "xpath:idRelative"],
+        ["xpath=//button[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba4aa983-b242-4e01-929f-219f9d1923c2",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.is-selected > img",
+      "targets": [
+        ["css=.is-selected > img", "css:finder"],
+        ["xpath=(//img[@alt='missile'])[3]", "xpath:img"],
+        ["xpath=//div[@id='player_weapons']/button[2]/img", "xpath:idRelative"],
+        ["xpath=//button[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a769c770-4bf0-4a42-9fd3-79f8588f6d7b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.is-selected",
+      "targets": [
+        ["css=.is-selected", "css:finder"],
+        ["xpath=//div[@id='player_weapons']/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'2')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "08842454-4ee6-4685-b52b-22d5102c7287",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cell-4-6 > .hover",
+      "targets": [
+        ["css=.cell-4-6 > .hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d0a7b0d-00dd-4252-ba90-5485ac5b1aa1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad47148b-bb5f-46ec-8205-911b5ec43bec",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.is-selected",
+      "targets": [
+        ["css=.is-selected", "css:finder"],
+        ["xpath=//div[@id='player_weapons']/button", "xpath:idRelative"],
+        ["xpath=//app-weapons/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b7a0f03-48ef-4b36-bc48-d3cf224f3df0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.is-selected > img",
+      "targets": [
+        ["css=.is-selected > img", "css:finder"],
+        ["xpath=//img[@alt='default']", "xpath:img"],
+        ["xpath=//div[@id='player_weapons']/button/img", "xpath:idRelative"],
+        ["xpath=//button/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dafa1dda-660f-4f55-88e7-23d3ad355ef7",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.is-selected",
+      "targets": [
+        ["css=.is-selected", "css:finder"],
+        ["xpath=//div[@id='player_weapons']/button", "xpath:idRelative"],
+        ["xpath=//app-weapons/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c6e4cf7-dcde-4c20-9c9f-a3d614dd92dd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cell-7-3 > .no-hit",
+      "targets": [
+        ["css=.cell-7-3 > .no-hit", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b19518a-2a24-418b-b252-145dd4f3746a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.weapon-button:nth-child(2) > img",
+      "targets": [
+        ["css=.weapon-button:nth-child(2) > img", "css:finder"],
+        ["xpath=(//img[@alt='missile'])[3]", "xpath:img"],
+        ["xpath=//div[@id='player_weapons']/button[2]/img", "xpath:idRelative"],
+        ["xpath=//button[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b35f4dea-12d1-4883-b491-6fa0bfb73ac5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(10) > .null:nth-child(6) > .intersection",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(10) > .null:nth-child(6) > .intersection", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a0f2846-e1be-46dc-8634-220a446ed625",
+      "comment": "",
+      "command": "click",
+      "target": "css=.is-selected > img",
+      "targets": [
+        ["css=.is-selected > img", "css:finder"],
+        ["xpath=(//img[@alt='missile'])[3]", "xpath:img"],
+        ["xpath=//div[@id='player_weapons']/button[2]/img", "xpath:idRelative"],
+        ["xpath=//button[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "26f67f55-aa5e-4f92-bde3-dd447ecc8fb8",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.is-selected",
+      "targets": [
+        ["css=.is-selected", "css:finder"],
+        ["xpath=//div[@id='player_weapons']/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'1')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd3944b3-8fd6-442e-acc0-cfbce191bec7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(6) > .null:nth-child(7) > .intersection",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(6) > .null:nth-child(7) > .intersection", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "906fa2b9-3cd6-4cc4-b608-1b55dd802088",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cell-2-6 .circle",
+      "targets": [
+        ["css=.cell-2-6 .circle", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f782b0a-1d44-4164-bfc6-3c0c5e111eab",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(3) > .er",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(3) > .er", "css:finder"],
+        ["xpath=//table[@id='board_ai-1778945332491-23yves']/tr[3]/td[8]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/app-battleship-board/table/tr[3]/td[8]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7a5a267-8546-45c3-81ab-a5af01b26b0e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a1fab48-e27c-4def-94d3-66e9bc994a7d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cell-2-6 > .intersection",
+      "targets": [
+        ["css=.cell-2-6 > .intersection", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "da7072f1-f20b-4a10-875b-5f482137fc15",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d00ee6a-a972-4d53-ae9b-8927ac0a79d9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover > .circle",
+      "targets": [
+        ["css=.hover > .circle", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "1742cb12-75e0-451b-a9af-45329b4765dd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cell-4-7 > .intersection",
+      "targets": [
+        ["css=.cell-4-7 > .intersection", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "313ca41d-8ff4-4d02-8554-3fe804a9d270",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e601c45-5a03-48a5-8897-ba041b53fb06",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cell-4-7 > .intersection",
+      "targets": [
+        ["css=.cell-4-7 > .intersection", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2c2b495-5a48-4fb6-bd5b-46f1ef052d78",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cell-7-6 .svg-inline--fa",
+      "targets": [
+        ["css=.cell-7-6 .svg-inline--fa", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "14119db3-0733-4e83-a028-396a5d785e13",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ea3f2e6-5060-4b19-a108-f2abb163bd89",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(4) > .null:nth-child(10) > .intersection",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(4) > .null:nth-child(10) > .intersection", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8917bb9-57bb-4431-8118-725b088e60b8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover > .circle",
+      "targets": [
+        ["css=.hover > .circle", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "6efb4136-9bb1-417c-87c2-7aaecc5e01b4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cell-1-9 > .no-hit",
+      "targets": [
+        ["css=.cell-1-9 > .no-hit", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1002f93-9070-48d0-8af7-45ff2d51a243",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cell-1-9 .circle",
+      "targets": [
+        ["css=.cell-1-9 .circle", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "274b6628-5723-4322-8388-996a3fddbc95",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce92a25d-6f28-419d-be15-a68d8c6e5cf2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.target",
+      "targets": [
+        ["css=.target", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "baa20ad3-d7d5-41e6-90e8-b9ca989949d9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.target",
+      "targets": [
+        ["css=.target", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "f473d4e5-35b2-4a15-85f6-606000a463d5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cell-5-8 .svg-inline--fa",
+      "targets": [
+        ["css=.cell-5-8 .svg-inline--fa", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e544836-3845-4d4d-b82e-a3a0c33847df",
+      "comment": "",
+      "command": "click",
+      "target": "css=.is-selected > img",
+      "targets": [
+        ["css=.is-selected > img", "css:finder"],
+        ["xpath=//img[@alt='default']", "xpath:img"],
+        ["xpath=//div[@id='player_weapons']/button/img", "xpath:idRelative"],
+        ["xpath=//button/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "38824e4e-bb11-4d4e-98ed-576180e153c8",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.is-selected",
+      "targets": [
+        ["css=.is-selected", "css:finder"],
+        ["xpath=//div[@id='player_weapons']/button", "xpath:idRelative"],
+        ["xpath=//app-weapons/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "59a5f50a-a223-438a-831e-e98a8ef3f726",
+      "comment": "",
+      "command": "click",
+      "target": "css=.target",
+      "targets": [
+        ["css=.target", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "cbf88eba-4012-426b-aa9f-e741d3548606",
+      "comment": "",
+      "command": "click",
+      "target": "css=.weapon-button:nth-child(2) > img",
+      "targets": [
+        ["css=.weapon-button:nth-child(2) > img", "css:finder"],
+        ["xpath=(//img[@alt='missile'])[5]", "xpath:img"],
+        ["xpath=//div[@id='player_weapons']/button[2]/img", "xpath:idRelative"],
+        ["xpath=//button[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "667c082a-f4b8-4919-af52-4c0708ee9942",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.is-selected",
+      "targets": [
+        ["css=.is-selected", "css:finder"],
+        ["xpath=//div[@id='player_weapons']/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'2')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef949223-5cae-4f3e-a260-7c11352e0b2d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cell-5-0 > .hover",
+      "targets": [
+        ["css=.cell-5-0 > .hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "890499ff-8b72-4f9c-a665-5b51bf221b81",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(5) > .null:nth-child(1) .circle",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(5) > .null:nth-child(1) .circle", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd5afa1f-0f60-47b4-9bcf-7dbfca78175c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(5) > .null:nth-child(1) .circle",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(5) > .null:nth-child(1) .circle", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "79a7f445-0e8e-4dce-8af8-8b5f090f0f3d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.target",
+      "targets": [
+        ["css=.target", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "84472d5c-9710-429c-a26c-c0e6ad1b448f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover > .circle",
+      "targets": [
+        ["css=.hover > .circle", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ba6b5e5-c826-4a82-809b-58c3ee7968b5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(4) > .null:nth-child(2) > .intersection",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(4) > .null:nth-child(2) > .intersection", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "445caee3-b39f-47bb-ba87-e77006cf1136",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(4) > .null:nth-child(2) .circle",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(4) > .null:nth-child(2) .circle", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "e274bf3e-9e2e-44e8-ae91-de8885eaa727",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cell-2-1 > .hover",
+      "targets": [
+        ["css=.cell-2-1 > .hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "35ddeebf-af21-4620-b385-aa1c9c576b9b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(7) > .null:nth-child(7) > .intersection",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(7) > .null:nth-child(7) > .intersection", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc52fae7-ecf8-413e-83b4-f7b98170f8d1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cell-6-6 > .no-hit",
+      "targets": [
+        ["css=.cell-6-6 > .no-hit", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5a8023b-4f71-4eb0-a7dd-4bbca8301089",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cell-9-7 .circle",
+      "targets": [
+        ["css=.cell-9-7 .circle", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e1af21d-3ce5-4142-9b9a-971824c91eb9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cell-9-7 .circle",
+      "targets": [
+        ["css=.cell-9-7 .circle", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd399ee8-10c9-4305-a46b-8d1eecfe6ee7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d6fad05-8c3c-4a85-b9a6-d05b64829829",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(4) > .null:nth-child(2) > .intersection",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(4) > .null:nth-child(2) > .intersection", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ca7907b-c929-4df6-a4c2-67373f095762",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(6) > .null:nth-child(1) .circle",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(6) > .null:nth-child(1) .circle", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "e125a46d-ddb1-4ed8-87a7-f3d3cf5e4673",
+      "comment": "",
+      "command": "click",
+      "target": "id=player_weapons",
+      "targets": [
+        ["id=player_weapons", "id"],
+        ["css=#player_weapons", "css:finder"],
+        ["xpath=//div[@id='player_weapons']", "xpath:attributes"],
+        ["xpath=//div[@id='battleships']/div[2]/div/app-weapons/div", "xpath:idRelative"],
+        ["xpath=//app-weapons/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5b4e4e9-0ce8-4f8d-b1b7-a95c5086c881",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cell-7-1 .svg-inline--fa",
+      "targets": [
+        ["css=.cell-7-1 .svg-inline--fa", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "fdb841d7-facc-4425-9c04-d51e39f7b1c9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cell-3-2 path",
+      "targets": [
+        ["css=.cell-3-2 path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff213aa6-1f95-4c45-befa-fb31df4030fa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cell-2-0 .svg-inline--fa",
+      "targets": [
+        ["css=.cell-2-0 .svg-inline--fa", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "d88d57e9-4fd1-4408-aa93-b7ba54e574c2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cell-2-0 .svg-inline--fa",
+      "targets": [
+        ["css=.cell-2-0 .svg-inline--fa", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "14b66fb6-b374-4262-b175-5eae5bd49aec",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn-secondary:nth-child(2)",
+      "targets": [
+        ["css=.btn-secondary:nth-child(2)", "css:finder"],
+        ["xpath=//app-juicy-button/button/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Play again!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "167890dc-245f-4a5c-926c-142aefccdd22",
+      "comment": "Após perder(Play again)",
+      "command": "click",
+      "target": "css=.front > .ng-star-inserted",
+      "targets": [
+        ["css=.front > .ng-star-inserted", "css:finder"],
+        ["xpath=//app-juicy-button/button/span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "18122f51-0f7c-414a-8a34-47f9721fc2d6",
+      "comment": "Disparar contra adversário",
+      "command": "click",
+      "target": "css=.target",
+      "targets": [
+        ["css=.target", "css:finder"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ecd3460c-450c-45ba-a807-e347fde3886b",
+    "name": "US13_ShootAtOpponent",
+    "commands": [{
+      "id": "4c601118-2a33-4897-bad5-0f88ef1ad01d",
+      "comment": "",
+      "command": "open",
+      "target": "https://papergames.io/en/battleship",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "759602a0-78a5-4fa3-a49f-ba852659510f",
+      "comment": "Inicializarão da dimensão da janela ",
+      "command": "setWindowSize",
+      "target": "1440x818",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "99efefe4-3c53-4c89-b6c5-b4eafb7f87d9",
+      "comment": "Iniciar jogo contra bot",
+      "command": "click",
+      "target": "css=.w-100:nth-child(2) > .btn .flex-grow-1",
+      "targets": [
+        ["css=.w-100:nth-child(2) > .btn .flex-grow-1", "css:finder"],
+        ["xpath=//app-juicy-button[2]/button/span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c6b6ca0-959d-42ad-8694-e63bbd4b18dd",
+      "comment": "Disparar contra adversário",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "f598d75d-e98b-4a67-bf8b-562be9d8cbf0",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": [],
+  "plugins": []
+}
