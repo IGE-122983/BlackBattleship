@@ -40,4 +40,12 @@ public class HomePage {
 
     // Asserção: Texto de boas-vindas exclusivo da página de guias
     public SelenideElement textoBoasVindasGuias = $(withText("Welcome to our game guide hub!"));
+
+    // US05
+    public SelenideElement playWithFriend =
+            $(By.xpath("//*[contains(text(),'Play with a friend')]"));
+    // US06
+    public SelenideElement playVsBot =
+            $(By.xpath("//*[contains(text(),'Play vs robot')]"));
+
 }
